@@ -1,0 +1,95 @@
+<script>
+    
+  var menu = document.getElementById('menu');
+  var nav = document.getElementById('nav');
+  var exit = document.getElementById('exit');
+
+  menu.addEventListener('click', function(e) {
+      nav.classList.toggle('hide-mobile');
+      e.preventDefault();
+  });
+
+  exit.addEventListener('click', function(e) {
+      nav.classList.add('hide-mobile');
+      e.preventDefault();
+  });
+
+</script>
+
+<div class="container">
+  <header>
+      <img src="../assets/logo.svg" alt="23andfour logo" class="logo">
+
+      <nav>
+          <a href="#" class="hide-desktop">
+              <img src="../assets/ham.svg" alt="toggle menu" class="menu" id="menu">
+          </a>
+
+          <ul class="show-desktop hide-mobile" id="nav">
+              <li id="exit" class="exit-btn hide-desktop">
+                  <img src="../assets/exit.svg" alt="exit menu">
+              </li>
+              <li><a href="#">home</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <section>
+      <img src="../assets/server.svg" alt="server graphic" class="server">
+      
+      <h1>Web Hosting for the Modern Era</h1>
+      <p class="subhead">Go serverless and pay only for what you use.</p>
+
+      <img src="../assets/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+  </section>
+</div>
+
+<div class="blue-container">
+  <div class="container">
+      <ul>
+          <li>
+              <img src="../assets/icon-1.svg" alt="Calendar icon">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+          </li>
+          <li>
+              <img src="../assets/icon-2.svg" alt="Calendar icon">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+          </li>
+          <li>
+              <img src="../assets/icon-3.svg" alt="Calendar icon">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+          </li>
+      </ul>
+  </div>
+</div>
+
+<div class="gray-container">
+  <div class="container">
+      <ul>
+          <li>
+              <figure>
+                  <img src="../assets/user1.png" alt="User testimonial picture">
+                  <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                  <figcaption>- Jane Doe</figcaption>
+              </figure>
+          </li>
+          <li>
+              <figure>
+                  <img src="../assets/user2.png" alt="User testimonial picture">
+                  <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                  <figcaption>- John Doe</figcaption>
+              </figure>
+          </li>
+      </ul>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Start your free trial now!</h2>
+  <a href="#" class="cta">Get Started</a>
+</div>
+
+<footer>
